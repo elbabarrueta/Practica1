@@ -189,10 +189,9 @@ public class ventanaVisual extends JFrame {
     
     public boolean validarCorreo(String correo) {
         // Validación de correo: letras, números, +, . antes y después de @
-//        return correo.matches("[a-zA-Z0-9.+]+@[a-zA-Z0-9.]+");
     	 boolean resultado =  correo.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}");
 
-     // Imprime mensajes de depuración
+     // Imprime mensajes
         System.out.println("Correo a validar: " + correo);
         System.out.println("Resultado de la validación de correo: " + resultado);
 
