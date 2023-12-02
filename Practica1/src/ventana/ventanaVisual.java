@@ -20,6 +20,12 @@ import java.util.Date;
 
 public class ventanaVisual extends JFrame {
 
+/*
+ * Esta aplicación utiliza la biblioteca SwingX
+ * 		**Versión utilizada:** 1.6.4
+ * Enlace para descargar la libreria:
+ * 		https://mvnrepository.com/artifact/org.swinglabs.swingx/swingx-all/1.6.4
+ */
 
 	public JTextField nombreTextField;
     public JTextField correoTextField;
@@ -206,7 +212,7 @@ public class ventanaVisual extends JFrame {
     	        resultadoTextArea.append("Nombre: " + nombre + "\n");
     	        resultadoTextArea.append("Correo: " + correo + "\n");
     	        resultadoTextArea.append("Tipo de Usuario: " + tipoUsuario + "\n");
-                resultadoTextArea.append("Fecha Actual: " + obtenerFechaFormateada(fechaNacimiento) + "\n");
+                resultadoTextArea.append("Fecha de nacimiento: " + obtenerFechaFormateada(fechaNacimiento) + "\n");
     	        resultadoTextArea.append("------------------------\n");
     	    } else {
     	        resultadoTextArea.append("Nombre o correo no válido\n------------------------\n");
